@@ -1,0 +1,11 @@
+dnspython==2.2.1
+grpcio==1.50.0
+grpcio-tools==1.50.0
+MarkupSafe==2.1.1
+mongoengine==0.24.2
+protobuf==4.21.9
+PyJWT==2.6.0
+pymongo==4.3.3
+python-dotenv==0.21.0
+six==1.16.0
+Werkzeug==2.2.2

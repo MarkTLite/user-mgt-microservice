@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+service UserMgt{
+    // simple RPC for creating user
+    rpc CreateUser(UserDataDict) returns (DBUserResponse){}
+    // simple RPC for reading user
+    rpc ReadUser(UserDataDict) returns (DBUserResponse) {}
+}
+
+message UserDataDict{
+    string username = 1;
+    string email = 2;
+    string role = 3;
+    string password = 4;
+}
+
+message DBUserResponse{
+    bool status = 1;
+    string message = 2;
+    UserDataDict data = 3;
+}
